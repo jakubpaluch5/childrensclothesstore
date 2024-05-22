@@ -1,0 +1,347 @@
+.loginSection {
+    .container {
+        padding-top: 80px;
+        padding-bottom: 140px;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        @media screen and (max-width: 1200px) {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+        @media screen and (max-width: 1000px) {
+            flex-flow: column;
+            gap: 20px;
+        }
+        .registerOrGuestBox {
+            background-color: #FFFFFF;
+            box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+            display: flex;
+            width: calc(50% - 20px);
+            max-width: 640px;
+            flex-flow: column;
+            padding: 40px;
+            justify-content: space-between;
+            @media screen and (max-width: 1200px) {
+                width: calc(50% - 10px);
+            }
+            @media screen and (max-width: 1000px) {
+                width: 100%;
+                max-width: 100%;
+                gap: 40px;
+                p {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+            @media screen and (max-width: 600px) {
+                padding: 20px;
+             }
+            .rogbRow {
+                h3 {
+                    font-family: 'Lato';
+                    font-size: 30px;
+                    font-weight: 700;
+                    margin: 0;
+                    text-align: center;
+                    color: #1A1A18;
+                    @media screen and (max-width: 600px) {
+                        font-size: 25px;
+                     }
+                    span {
+                        color: #E2A269;
+                    }
+                }
+                p {
+                    text-align: center;
+                    font-family: 'Lato';
+                    font-size: 18px;
+                    color: black;
+                    margin-top: 35px;
+                    font-weight: 400;
+                    max-width: 530px;
+                }
+                .motulinkaBtn {
+                    margin-top: 50px;
+                    height: 65px;
+                    border-bottom-left-radius: 0px;
+                    border-top-right-radius: 0px;
+                    width: 100%;
+                }
+            }
+        }
+        @media screen and (max-width: 600px) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        
+        .haveAlreadyAccountText {
+            text-align: center;
+            font-family: 'Lato';
+            font-size: 22px;
+            font-weight: 700;
+            margin: 0;
+            margin-top: 40px;
+            color: #000000;
+            a {
+                color: #E2A269;
+                font-family: 'Lato';
+            font-size: 22px;
+            font-weight: 700;
+            transition: opacity 0.3s ease;
+            &:hover {
+                opacity: 0.7;
+            }
+            }
+        }
+        .loginBox {
+            background-color: white;
+            width: calc(50% - 40px);
+            max-width: 640px;
+            @media screen and (max-width: 1200px) {
+                width: calc(50% - 10px);
+            }
+            @media screen and (max-width: 1000px) {
+                width: 100%;
+                max-width: 100%;
+              
+            }
+
+            padding: 40px;
+            @media screen and (max-width: 600px) {
+                padding: 20px;
+                padding-bottom: 40px;
+            }
+            padding-bottom: 75px;
+            box-shadow: 0 3px 6px 0px rgba(0,0,0,0.16);
+            .u-column1 {
+                display: none;
+            }
+            .u-column2 {
+                h2 {
+                    display: none;
+                }
+            }
+            h3 {
+                color: #1A1A18;
+                margin: 0;
+                font-size: 30px;
+                font-weight: 700;
+                font-family: 'Lato';
+                text-transform: uppercase;
+                text-align: center;
+                @media screen and (max-width: 600px) {
+                   font-size: 25px;
+                }
+            }
+            .loginBox__desc {
+                color: #6E6E6E;
+                font-family: 'Lato';
+                text-align: center;
+                font-size: 16px;
+                font-weight: 400;
+                &.loginBox__desc--social {
+                    margin-top: 60px;
+                }
+            }
+            form {
+                margin-top: 40px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-flow: row wrap;
+                // justify-content: space-between !important;
+                column-gap: 30px;
+                row-gap: 30px;
+                .formWrapper {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    align-items: center;
+                    @media screen and (max-width: 600px) {
+                        flex-flow: column;
+                        align-items: flex-start;
+                        gap: 30px;
+                    }
+                    .remember {
+                        width: fit-content;
+                    }
+                    a {
+                        font-size: 16px;
+                        font-family: 'Lato';
+                        font-weight: 400;
+                        text-decoration: underline;
+                        text-transform: unset !important;
+                        color: #E2A269;
+                        transition: opacity 0.3s ease;
+                        &:hover {
+                            opacity: 0.7;
+                        }
+                        
+                    }
+                }
+               #showRepeatPassword, #hideRepeatPassword, #showPassword, #hidePassword {
+                    position: absolute;
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                    right: 15px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    transition: opacity 0.3s ease;
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+                #hideRepeatPassword, #hidePassword {
+                    display: none;
+                }
+                .form-row {
+                    position: relative;
+                }
+                p {
+                    margin: 0;
+                }
+                button[type=submit] {
+                    margin-top: 20px;
+                    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    z-index: 9;
+    font-size: 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E2A269;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    transition: box-shadow 0.5s ease, padding-right 0.5s ease, border-bottom-right-radius 0.5s ease, border-top-left-radius 0.5s ease;
+    
+    &:hover {
+        color: white;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+
+    }
+    &:after {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19.28' height='11.808' viewBox='0 0 19.28 11.808'%3E%3Cg id='Group_186' data-name='Group 186' transform='translate(-614 -501.192)'%3E%3Cpath id='Icon_ionic-ios-arrow-forward' data-name='Icon ionic-ios-arrow-forward' d='M15.963,12.1,11.494,7.633a.84.84,0,0,1,0-1.192.851.851,0,0,1,1.2,0L17.752,11.5a.842.842,0,0,1,.025,1.164l-5.084,5.094a.844.844,0,1,1-1.2-1.192Z' transform='translate(615.282 494.996)' fill='%23fff'/%3E%3Crect id='Rectangle_89' data-name='Rectangle 89' width='18' height='2' rx='1' transform='translate(614 506)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
+        height: 11px;
+        background-position: center;
+        background-size: contain;
+        width: 19px;
+        position: absolute;
+        top: 53%;
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+        content: '';
+        right: 30px;
+        z-index: 9;
+        opacity: 0;
+        transition: right 0.3s ease, opacity 0.3s ease;
+    }
+   
+    &:hover {
+        
+        &:after {
+            opacity: 1;
+            right: 15px;
+        }
+        padding-right: 20px;
+        box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.16);
+    }
+   
+                }
+                .woocommerce-privacy-policy-text {
+                    display: none;
+                }
+                .remember{
+                    input {
+                        display: none;
+                    }
+                    input[type=checkbox]:checked + label {
+                        
+                           &:before {
+                            background-color: #E2A269;
+                           }
+                        
+                    }
+                    label {
+                        position: relative;
+                        align-items: center;
+                        display: flex;
+                        gap: 20px;
+                        color: #6E6E6E;
+                        font-size: 16px;
+                        font-weight: 400;
+                        font-family: 'Lato';
+                        span {
+                            color: #6E6E6E;
+                            font-size: 16px;
+                            font-weight: 400;
+                            font-family: 'Lato';
+                            a {
+                                color: #E2A269;
+                                text-decoration: underline;
+                                transition: opacity 0.3s ease;
+                                &:hover {
+                                    opacity: 0.7;
+                                }
+                            }
+                        }
+                        &:before {
+                            width: 24px;
+                            cursor: pointer;
+                            height: 24px;
+                            min-width: 24px;
+                            max-width: 24px;
+                            max-height: 24px;
+                            min-height: 24px;
+                            content: '';
+transition: background-color 0.3s ease;
+                            border: 1px solid #B2B2B2;
+                            display: block;
+                        }
+                    }
+                }
+                .clear {
+                    display: none;
+                }
+                p.form-row-first, p.form-row-last {
+                    width: calc(100%);
+                    margin: 0;
+                    @media screen and (max-width: 600px) {
+                        width: 100%;
+                    }
+                }
+                .woocommerce-form-row, .form-row  {
+                    width: 100%;
+                }
+                label {
+                    display: none;
+                }
+                input[type=password], input[type=email], input[type=text] {
+                   height: 45px;
+                   width: 100%;
+                   background-color: #F9F6F4;
+                   color: #1A1A18;
+                   font-family: 'Lato' !important;
+                   outline: none;
+                   font-size: 14px;
+                   border: none;
+                   font-weight: 400;
+                   padding-left: 20px;
+                   &::placeholder {
+                    color: #1A1A18;
+                    font-family: 'Lato' !important;
+                    font-size: 14px;
+                    font-weight: 400;
+                   }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+@import "common/colors";
+
+
+.dgwt-wcas-search-wrapp {
+    margin: 0;
+    max-width: 290px;
+    min-width: 290px;
+
+    @media screen and (max-width: 1500px) {
+        max-width: 220px;
+        min-width: 220px;
+    }
+
+    .dgwt-wcas-search-submit {
+        &:before {
+            display: none;
+        }
+    }
+    .dgwt-wcas-sf-wrapp {
+        button.dgwt-wcas-search-submit {
+            background-color: $brown;
+        }
+        input[type=search].dgwt-wcas-search-input {
+            background-color: $lightGray;
+            border: none;
+            font-family: 'futura-pt', sans-serif;
+            font-style: normal;
+            font-size: 16px;
+            color: black;
+            &::placeholder {
+                font-family: 'futura-pt', sans-serif;
+                font-style: normal;
+                font-size: 16px;
+                color: gray;
+                opacity: 0.6;
+                
+            }
+        }
+    }
+}
+
+.dgwt-wcas-details-title-tax, .dgwt-wcas-pd-title .product-title {
+    font-weight: 700;
+    letter-spacing: unset;
+    font-size: 16px;
+}
+.dgwt-wcas-datails-title, .dgwt-wcas-pd-title {
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+
+.dgwt-wcas-tpd-image {
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.1);
+}
+.dgwt-wcas-tpd-rest-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+.dgwt-wcas-tpd-price span {
+    font-family: 'futura-pt', sans-serif;
+    font-size: 14px;
+    color: black;
+}
+.dgwt-wcas-has-headings .dgwt-wcas-suggestion-headline .dgwt-wcas-st {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    letter-spacing: unset;
+}
+.dgwt-wcas-details-wrapp {
+    border: 1px solid $opacitybrown !important;
+}
+.dgwt-wcas-datails-title, .dgwt-wcas-pd-title {
+    border-bottom: 1px solid $opacitybrown !important;
+}
+.dgwt-wcas-has-headings .dgwt-wcas-suggestion-headline .dgwt-wcas-st {
+    border-bottom: 1px solid $opacitybrown !important;
+}
+
+.dgwt-wcas-st {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    letter-spacing: unset;
+}

@@ -1,0 +1,381 @@
+.page-id-1737 {
+.woocommerce-account .woocommerce::after, .woocommerce-account .woocommerce::before {
+    display: none;
+}
+.woocommerce-MyAccount-navigation-link--wpf-delete-account {
+    display: none;
+}
+.woocommerce .col2-set::after, .woocommerce .col2-set::before, .woocommerce-page .col2-set::after, .woocommerce-page .col2-set::before {
+    display: none;
+}
+.woocommerce-message {
+    background-color: white;
+}
+.woocommerce-error::after, .woocommerce-info::after, .woocommerce-message::after {
+    display: none;
+}
+.woocommerce-Addresses {
+
+}
+.woocommerce-info::before {
+    display: none;
+}
+.woocommerce-info {
+    border-top: unset;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.woocommerce-error, .woocommerce-info, .woocommerce-message {
+    padding-left: 15px;
+}
+.woocommerce-info {
+    font-size: 16px;
+    font-family: 'Lato';
+    font-weight: 400;
+}
+.wpfda-password-confirm {
+    display: flex;
+    flex-flow: column;
+    button {
+        width: 50% !important;
+    }
+    input[type=password] {
+        border: none;
+        background-color: #F9F6F4;
+        box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+        padding-left: 20px;
+        height: 45px;
+        width: 50%;
+        outline: none;
+        &::placeholder {
+            font-size: 14px;
+            font-weight: 400;
+            color: #1A1A18;
+            font-family: 'Lato';
+        }
+      }
+    label {
+        margin-bottom: 20px;
+        font-family: 'Lato';
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+.woocommerce .woocommerce-error .button, .woocommerce .woocommerce-info .button, .woocommerce .woocommerce-message .button, .woocommerce-page .woocommerce-error .button, .woocommerce-page .woocommerce-info .button, .woocommerce-page .woocommerce-message .button {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    z-index: 9;
+    font-size: 18px;
+    color: white;
+    border: none !important;
+    position: relative;
+    height: 50px;
+    width: 280px;
+    outline: none !important;
+    cursor: pointer !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E2A269;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    transition: box-shadow 0.5s ease, padding-right 0.5s ease, border-bottom-right-radius 0.5s ease, border-top-left-radius 0.5s ease;
+    
+    &:hover {
+        background-color: #E2A269;
+        color: white;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+
+    }
+    &:after {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19.28' height='11.808' viewBox='0 0 19.28 11.808'%3E%3Cg id='Group_186' data-name='Group 186' transform='translate(-614 -501.192)'%3E%3Cpath id='Icon_ionic-ios-arrow-forward' data-name='Icon ionic-ios-arrow-forward' d='M15.963,12.1,11.494,7.633a.84.84,0,0,1,0-1.192.851.851,0,0,1,1.2,0L17.752,11.5a.842.842,0,0,1,.025,1.164l-5.084,5.094a.844.844,0,1,1-1.2-1.192Z' transform='translate(615.282 494.996)' fill='%23fff'/%3E%3Crect id='Rectangle_89' data-name='Rectangle 89' width='18' height='2' rx='1' transform='translate(614 506)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
+        height: 11px;
+        background-position: center;
+        background-size: contain;
+        width: 19px;
+        position: absolute;
+        top: 53%;
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+        content: '';
+        right: 30px;
+        z-index: 9;
+        opacity: 0;
+        transition: right 0.3s ease, opacity 0.3s ease;
+    }
+   
+    &:hover {
+        
+        &:after {
+            opacity: 1;
+            right: 15px;
+        }
+        padding-right: 20px;
+        box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.16);
+    }
+}
+fieldset {
+    legend {
+        font-size: 25px;
+        color: black;
+        font-family: 'Lato';
+    }
+    label {
+        font-family: 'Lato';
+        font-size: 14px;
+        font-weight: 400;
+        color: black;
+    }
+    input[type=tel], input[type=text], input[type=email], input[type=password] {
+        border: none;
+        background-color: #F9F6F4;
+        padding-left: 20px;
+        height: 45px;
+        &::placeholder {
+            font-size: 14px;
+            font-weight: 400;
+            color: #1A1A18;
+            font-family: 'Lato';
+        }
+      }
+}
+.woocommerce-MyAccount-content {
+    form {
+        box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+        background-color: white;
+        padding: 40px;
+        em {
+            font-family: 'Lato';
+            font-size: 14px;
+            font-weight: 400;
+            color: black;
+        }
+        label {
+            font-family: 'Lato';
+            font-size: 14px;
+            font-weight: 400;
+            color: black;
+        }
+        input[type=tel], input[type=text], input[type=email] {
+            border: none;
+            background-color: #F9F6F4;
+            padding-left: 20px;
+            height: 45px;
+            &::placeholder {
+                font-size: 14px;
+                font-weight: 400;
+                color: #1A1A18;
+                font-family: 'Lato';
+            }
+          }
+        button[type=submit] {
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            z-index: 9;
+            font-size: 18px;
+            color: white;
+            position: relative;
+            height: 50px;
+            border: none;
+            cursor: pointer;
+            width: 280px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #E2A269;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            transition: box-shadow 0.5s ease, padding-right 0.5s ease, border-bottom-right-radius 0.5s ease, border-top-left-radius 0.5s ease;
+            
+            &:hover {
+                background-color: #E2A269;
+                color: white;
+                border-top-left-radius: 25px;
+                border-bottom-right-radius: 25px;
+        
+            }
+            &:after {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19.28' height='11.808' viewBox='0 0 19.28 11.808'%3E%3Cg id='Group_186' data-name='Group 186' transform='translate(-614 -501.192)'%3E%3Cpath id='Icon_ionic-ios-arrow-forward' data-name='Icon ionic-ios-arrow-forward' d='M15.963,12.1,11.494,7.633a.84.84,0,0,1,0-1.192.851.851,0,0,1,1.2,0L17.752,11.5a.842.842,0,0,1,.025,1.164l-5.084,5.094a.844.844,0,1,1-1.2-1.192Z' transform='translate(615.282 494.996)' fill='%23fff'/%3E%3Crect id='Rectangle_89' data-name='Rectangle 89' width='18' height='2' rx='1' transform='translate(614 506)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
+                height: 11px;
+                background-position: center;
+                background-size: contain;
+                width: 19px;
+                position: absolute;
+                top: 53%;
+                background-repeat: no-repeat;
+                transform: translateY(-50%);
+                content: '';
+                right: 30px;
+                z-index: 9;
+                opacity: 0;
+                transition: right 0.3s ease, opacity 0.3s ease;
+            }
+           
+            &:hover {
+                
+                &:after {
+                    opacity: 1;
+                    right: 15px;
+                }
+                padding-right: 20px;
+                box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.16);
+            }
+           
+           
+        }
+        h3 {
+            margin: 0;
+            color: black;
+            font-size: 25px;
+            font-family: 'Lato';
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+        .select2-selection__rendered {
+            height: 45px;
+            display: flex;
+            padding-left: 20px;
+            align-items: center;
+          }
+          .select2-container--default .select2-selection--single .select2-selection__arrow {
+            top: 50%;
+            transform: translateY(-50%);
+            right: 20px;
+          }
+            .select2-selection--single  {
+                border: none;
+                background-color: #F9F6F4;
+                height: 45px;
+            }
+    }
+}
+.woocommerce-address-fields {
+    input[type=tel], input[type=text], input[type=email] {
+        border: none;
+        background-color: #F9F6F4;
+        padding-left: 20px;
+        height: 45px;
+        &::placeholder {
+            font-size: 14px;
+            font-weight: 400;
+            color: #1A1A18;
+            font-family: 'Lato';
+        }
+      }
+}
+.woocommerce-Address {
+    box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.16);
+    background-color: white;
+    position: relative;
+    
+    address {
+        padding: 40px;
+        font-family: 'Lato';
+        font-size: 14px;
+        font-weight: 400;
+        color: black;
+    }
+    .edit {
+        position: absolute;
+        
+        right: 20px;
+        bottom: 20px;
+        font-family: 'Lato';
+        font-weight: 700;
+        color: #E2A269;
+        text-decoration: underline;
+        font-size: 14px;
+    }
+}
+.woocommerce-account .addresses .title h3 {
+    width: 100%;
+    height: 65px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 40px;
+    font-family: 'Lato';
+    box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.04);
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #E2A269;
+}
+.myAccountSection {
+    .container {
+        padding-bottom: 80px;
+        .pageTitle {
+            color: #1A1A18;
+            margin-top: 50px;
+            font-family: 'Lato';
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: 900;   
+        }
+        .woocommerce {
+            margin-top: 70px;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            .woocommerce-MyAccount-content {
+                width: calc(100% - 346px);
+                float: unset !important;
+                p {
+                    font-family: 'Lato';
+                    font-size: 15px;
+                    font-weight: 700;
+                    color: #161615;
+                    a {
+                        color: #E2A269;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .woocommerce-MyAccount-navigation {
+                width: 226px;
+                ul {
+                    padding-left: 0;
+                    display: flex;
+                    flex-flow: column;
+                    gap: 10px;
+                    li {
+                        width: 100%;
+                        a {
+                            width: 100%;
+                            display: flex;
+                            
+                            align-items: center;
+                            height: 52px;
+                            padding-left: 30px;
+                            background-color: white;
+                            color: #6E6E6E;
+                            font-family: 'Lato';
+                            font-size: 16px;
+                            font-weight: 700;
+                            border: 1px solid #E2A269;
+                            transition: all 0.3s ease;
+                        }
+                        &:hover {
+                            a {
+                                background-color: #E2A269;
+                                color: white;
+                            }
+                        }
+                        &.is-active {
+                            a {
+                                background-color: #E2A269;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+}

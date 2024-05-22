@@ -1,0 +1,130 @@
+.aboutUsContentSection {
+    padding-bottom: 87px;
+    padding-top: 40px;
+    .container {
+        h5 {
+            font-family: 'Lato';
+            font-size: 24px;
+            font-weight: 500;
+            width: fit-content;
+            color: #1A1A18;
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: -6px;
+                left: 0;
+                background-color: #E2A269;
+                height: 4px;
+                width: 74%;
+                @media screen and (max-width: 500px) {
+                    display: none;
+                }
+            }
+            @media screen and (max-width: 800px) {
+                font-size: 18px;
+            }
+        }
+        .aboutUsContentSection__row {
+            margin-top: 57px;
+            justify-content: space-between;
+            display: flex;
+            flex-flow: row;
+            @media screen and (max-width: 1000px) {
+                flex-flow: column;
+                gap: 20px;
+            }
+            p {
+                margin: 0;
+                font-family: 'Lato';
+                font-size: 16px;
+                font-weight: 400;
+                color: #1A1A18;
+            }
+            .row__content {
+                width: calc(100% - 420px);
+                @media screen and (max-width: 1200px) {
+                    width: calc(60% - 20px);
+                }
+                @media screen and (max-width: 1000px) {
+                    width: 100%;
+                }
+            }
+            .row__image {
+                width: 380px;
+                background-position: center;
+                background-size: cover;
+                box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.18);
+                height: 367px;
+                @media screen and (max-width: 1200px) {
+                    width: calc(40% - 20px);
+                }
+                @media screen and (max-width: 1000px) {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                @media screen and (max-width: 800px) {
+                    width: 70%;
+                }
+                @media screen and (max-width:500px) {
+                   width: 100%;
+                }
+            }
+        }
+        .aboutUsContentSection__row--reverse {
+            @media screen and (max-width: 1000px) {
+                flex-flow: column-reverse;
+                gap: 120px;
+            }
+            .row__content {
+                width: calc(100% - 680px);
+                @media screen and (max-width: 1200px) {
+                    width: calc(55% - 40px);
+                }
+                @media screen and (max-width: 1000px) {
+                    width: 100%;
+                }
+            }
+            .row__image {
+                margin-top: -70px;
+                width: 574px;
+                height: 367px;
+                box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.18);
+                position: relative;
+                @media screen and (max-width: 1200px) {
+                    width: calc(45% - 40px);
+                }
+                @media screen and (max-width: 1000px) {
+                    margin-top: 0;
+                    margin-left: auto;
+                    width: 60%;
+                }
+                @media screen and (max-width: 800px) {
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: unset;
+                }
+                .row__insideImage {
+                    border: 12px solid #F9F6F4;
+                    border-radius: 50%;
+                    width: 300px;
+                    height: 300px;
+                    position: absolute;
+                    bottom: -90px;
+                    left: -70px;
+                }
+            }
+        }
+
+        .signatureImage {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            margin-top: 150px;
+            @media screen and (max-width: 1200px) {
+                margin-top: 50px;
+            }
+        }
+    }
+}
